@@ -10,7 +10,8 @@ function leer (){
 launchButton.addEventListener('click',leer);
 
 //Prueba de fetch!!!!
-let url='https://pokeapi.co/api/v2/pokemon/4'
+let pokemon_id=4;
+let url=`https://pokeapi.co/api/v2/pokemon/${pokemon_id}`
 fetch(url)
     .then(res=> res.json())
     .then (data=> {
